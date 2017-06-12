@@ -1,10 +1,10 @@
 # Transfer matrix
 
-Transfer matrix is a standard tool for the optical analysis of thin films. This library implements the transfer matricies in MATLAB and closely follows the book by Eugene Hecht (*Optics*, 4th ed., Chapter 9, Section 7). The libirary provides the basis to implementing customized codes for specific tasks.
+Transfer matrix is a standard tool for the optical analysis of thin films. This library implements the transfer matricies in MATLAB and closely follows the book by Eugene Hecht (*Optics*, 4th ed., Chapter 9, Section 7). For the background information on how the transfer matrices are derived from the Maxwell's equations, the users should refer to the textbook. The libirary provides the basis to implementing customized codes for specific tasks.
 
 * **Optial modeling:** A transfer matrix relates the electromagnetic fields at the two boundaries of a thin film. Reflectance, transmittance, and absorption of a thin film can be derived from the corresponding transfer matrix (see example below). 
 * **Multi-layer analysis:** The analysis of multi-layer structures, including the presence of substrate and superstrate, can be easily implemented by the multiplication of individual matrices.
-* **Deriving dielectric function and refractive index:** The transfer matrix can also be used reversely to derive the material optical functions such as the dielectric function and refractive index from optical measurements. An optimization procedure constrained by Kramers-Kronig relation can be used to obtain robust results. A theoretical discussion of Kramers-Kronig constrained analysis can be found in Review of Scientific Instruments 76, 083108 (2005). An implementation of the procedure for 2D materials can be found in Phys. Rev. B 90, 205422 (2014).
+* **Deriving dielectric function and refractive index:** The transfer matrix can also be used in reverse to derive the material optical functions such as the dielectric function and refractive index from optical measurements. An optimization procedure constrained by Kramers-Kronig relations can be used to obtain robust results. A theoretical discussion of Kramers-Kronig constrained analysis can be found in Review of Scientific Instruments 76, 083108 (2005). An implementation of the procedure for 2D materials can be found in Phys. Rev. B 90, 205422 (2014).
 
 ## Examples
 This example calculates the reflectance \(_R_\), reflectivity \(_r_\), transmittance \(_T_\), transmission coefficient \(_t_\), and absorbance \(_A_\) for a free-standing 100 nm thick SiO<sub>2</sub> layer.
