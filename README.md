@@ -18,7 +18,7 @@ ns= 1; % refractive index of substrate, in this case vacuum
 Y0= sqrt(eps0/mu0)*n0*cos(0);
 Ys= sqrt(eps0/mu0)*ns*cos(0);
 
-M= propM_TE(n1, d, lambda, 0);
+M= M_TE(n1, d, lambda, 0);
 r= (Y0*M(1,1)+ Y0*Ys*M(1,2)- M(2,1)- Ys*M(2,2))/(Y0*M(1,1)+ Y0*Ys*M(1,2)+ M(2,1)+ Ys*M(2,2));
 t= (2*Y0)/(Y0*M(1,1)+ Y0*Ys*M(1,2)+ M(2,1)+ Ys*M(2,2));
 
@@ -27,3 +27,8 @@ T= real(ns)/n0*abs(t)^2; % transmittance
 A= 1- abs(r)^2- abs(t)^2*real(ns)/n0; % Absorbance
 ```
 This example calculates the reflectance \(_R_\), reflectivity \(_r_\), transmittance \(_T_\), transmission coefficient \(_t_\), and absorbance \(_A_\) for a free-standing 10 nm thick SiO<sub>2</sub> layer.
+
+```matlab
+M = M1 * M2;
+```
+For multilayers, simply multiply the transfer matricies of the layers as in the example above.
