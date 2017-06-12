@@ -24,6 +24,6 @@ t= (2*Y0)/(Y0*M(1,1)+ Y0*Ys*M(1,2)+ M(2,1)+ Ys*M(2,2));
 
 R= abs(r)^2; % reflectance
 T= real(ns)/n0*abs(t)^2; % transmittance
-A= 1- abs(r)^2- abs(t)^2*ns/n0; % Absorbance
+A= 1- abs(r)^2- abs(t)^2*real(ns)/n0; % Absorbance
 ```
 This example calculates the reflectance \(_R_\), reflectivity \(_r_\), transmittance \(_T_\), transmission coefficient \(_t_\), and absorbance \(_A_\) for a free-standing 10 nm thick SiO<sub>2</sub> layer.
