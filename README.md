@@ -7,7 +7,7 @@ Transfer matrix is a standard tool for the optical analysis of thin films. This 
 * **Deriving dielectric function and refractive index:** A fitting procedure such as `lsqnonlin` in MATLAB can be used with the transfer matrix to derive the material optical functions including the dielectric function and refractive index.
 
 ## Examples
-This example calculates the reflectance \(_R_\), reflectivity \(_r_\), transmittance \(_T_\), transmission coefficient \(_t_\), and absorbance \(_A_\) for a free-standing 10 nm thick SiO<sub>2</sub> layer.
+This example calculates the reflectance \(_R_\), reflectivity \(_r_\), transmittance \(_T_\), transmission coefficient \(_t_\), and absorbance \(_A_\) for a free-standing 100 nm thick SiO<sub>2</sub> layer.
 ```matlab
 eps0= 8.85e-12; % vacuum permittivity
 mu0= 4*pi*1e-7; % vacuum permeability
