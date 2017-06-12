@@ -13,8 +13,8 @@ mu0= 4*pi*1e-7; % vacuum permeability
 d= 100e-9; % thickness
 lambda= 1e-6; % wavelength
 n1= 1.5; % refractive index of thin layer
-n0= 1; % refractive index of superstrate
-ns= 1; % refractive index of substrate
+n0= 1; % refractive index of superstrate, in this case vacuum
+ns= 1; % refractive index of substrate, in this case vacuum
 Y0= sqrt(eps0/mu0)*n0*cos(0);
 Ys= sqrt(eps0/mu0)*ns*cos(0);
 
