@@ -1,6 +1,6 @@
 # Transfer matrix
 
-Transfer matrix is a MATLAB library for optical analysis of thin films. 
+Transfer matrix is a MATLAB library for optical analysis of thin films. The formalism closely follows the book by Eugene Hecht (*Optics*, 4th ed., Chapter 9 Interference, Section 7 Applications of single and multilayer films).
 
 * **Optial modeling:** Transfer matrices is used to model the optics of thin films. Reflectance, transmittance, and absorption can be calculated. 
 * **Multi-layer analysis:** The analysis of multi-layer structures, including the presence of substrate and superstrate, can be easily implemented by the multiplication of individual matrices.
